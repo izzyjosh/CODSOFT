@@ -83,7 +83,7 @@ li:hover {
 .introduce {
   text-align: center;
 }
-p {
+.intro p {
   color: white;
   font-size: 12px;
   float: right;
@@ -102,6 +102,47 @@ h4 {
   font-family: Comic Sans MS;
   padding: 12px;
 }
+.section-head {
+  color: white;
+  padding: 12px;
+  font-size: 45px;
+  font-weight: 600;
+  font-family: Comic Sans MS;
+  text-align: center;
+  margin: 30px;
+}
+span {
+  color: #bd9106;
+}
+hr {
+  margin: 20px 0 0 0;
+  background: #bd9106;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.about .container p {
+  font-size: 16px;
+}
+.about ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
+.stat {
+  display: flex;
+}
+.card {
+  border: 2px solid #484848;
+  padding: 40px;
+  margin: 10px;
+  font-size: 20px;
+}
+
 @media (max-width: 800px) {
   .logo {
     padding: 10px;
@@ -129,5 +170,8 @@ h4 {
   }
   h4 {
     font-size: 18px;
+  }
+  .section-head {
+    font-size: 20px;
   }
 }
