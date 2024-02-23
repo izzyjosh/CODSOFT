@@ -122,11 +122,10 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
+  padding: 30px;
 }
 
 .about .container p {
-  font-size: 16px;
 }
 .about ul {
   display: flex;
@@ -135,12 +134,42 @@ hr {
 }
 .stat {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .card {
   border: 2px solid #484848;
   padding: 40px;
   margin: 10px;
   font-size: 20px;
+  width: 100%;
+}
+.skills h2 {
+  text-align: center;
+  padding: 20p;
+  margin: 10px;
+  font-size: 40px;
+  color: white;
+}
+.skills .skill-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background: #31312f;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 10px;
+  margin: 30px;
+}
+.circular-progress {
+  position: relative;
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+  background: conic-gradient(#bd9106 3.6deg,#fff 0deg);
 }
 
 @media (max-width: 800px) {
@@ -173,5 +202,11 @@ hr {
   }
   .section-head {
     font-size: 20px;
+  }
+  .about .container {
+    display: block;
+  }
+  .stat {
+    justify-content: center;
   }
 }
