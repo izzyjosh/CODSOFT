@@ -147,9 +147,16 @@ hr {
 .skills h2 {
   text-align: center;
   padding: 20p;
-  margin: 10px;
+  margin: 20px;
   font-size: 40px;
   color: white;
+}
+.sect-con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
 }
 .skills .skill-container {
   display: flex;
@@ -166,10 +173,32 @@ hr {
 }
 .circular-progress {
   position: relative;
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 80%;
   border-radius: 50%;
-  background: conic-gradient(#bd9106 3.6deg,#fff 0deg);
+  background: conic-gradient(#bd9106 3.6deg, #000 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circular-progress:before {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: #31312f;
+}
+.progress-bar {
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  color: #bd9106;
+}
+.text {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 @media (max-width: 800px) {
