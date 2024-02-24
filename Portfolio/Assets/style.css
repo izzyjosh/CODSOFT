@@ -156,7 +156,6 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
 }
 .skills .skill-container {
   display: flex;
@@ -237,5 +236,53 @@ hr {
   }
   .stat {
     justify-content: center;
+  }
+  .skills h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  .skills .skill-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: #31312f;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 5pxpx;
+    margin: 10px;
+  }
+  .circular-progress {
+    position: relative;
+    height: 90px;
+    width: 50px;
+    border-radius: 50%;
+    background: conic-gradient(#bd9106 3.6deg, #000 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circular-progress:before {
+    content: "";
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    border-radius: 50%;
+    background-color: #31312f;
+  }
+  .progress-bar {
+    position: relative;
+    font-size: 12px;
+    font-weight: 200;
+    color: #bd9106;
+  }
+  .text {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
   }
 }
